@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Dashboard Pro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+    <!-- Plotly.js -->
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+</head>
+<body>
+    <div class="background-mesh"></div>
+    
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar glass-panel">
+            <div class="logo">
+                <i class="fas fa-chart-line"></i>
+                <h2>TechDash</h2>
+            </div>
+            
+            <div class="search-box">
+                <input type="text" id="ticker-input" placeholder="Enter Ticker (e.g. AAPL)" value="AAPL" />
+                <button id="search-btn" class="glow-btn"><i class="fas fa-search"></i></button>
+            </div>
+
+            <div class="stock-info" id="stock-info" style="display: none;">
+                <h3 id="stock-name">Apple Inc.</h3>
+                <div class="info-badge" id="stock-sector">Technology</div>
+                <div class="price-display">
+                    <span class="currency">$</span>
+                    <span id="stock-price">0.00</span>
+                </div>
+            </div>
+
+            <nav class="nav-links">
+                <a href="#" class="active"><i class="fas fa-chart-pie"></i> Dashboard</a>
+                <a href="#"><i class="fas fa-history"></i> History</a>
+                <a href="#"><i class="fas fa-cog"></i> Settings</a>
+            </nav>
+            
+            <div class="sidebar-footer">
+                <p>Powered by yFinance & Plotly</p>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="glass-panel top-bar">
+                <div class="title">
+                    <h1 id="dashboard-title">AAPL Technical Analysis</h1>
+                    <p class="subtitle">Interactive Financial Market Data</p>
+                </div>
+                <div class="controls">
+                    <select id="period-select" class="glass-select">
+                        <option value="1mo">1 Month</option>
+                        <option value="3mo">3 Months</option>
+                        <option value="6mo">6 Months</option>
+                        <option value="1y" selected>1 Year</option>
+                        <option value="2y">2 Years</option>
+                        <option value="5y">5 Years</option>
+                    </select>
+                </div>
+            </header>
+
+            <div class="charts-grid">
+                <div class="chart-container glass-panel main-chart">
+                    <div id="price-chart" class="plotly-chart"></div>
+                    <div class="loader" id="loader-price"></div>
+                </div>
+
+                <div class="chart-container glass-panel macd-chart">
+                    <div id="macd-chart" class="plotly-chart"></div>
+                    <div class="loader" id="loader-macd"></div>
+                </div>
+
+                <div class="chart-container glass-panel rsi-chart">
+                    <div id="rsi-chart" class="plotly-chart"></div>
+                    <div class="loader" id="loader-rsi"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
