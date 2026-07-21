@@ -1,3 +1,3 @@
-## 2024-05-17 - Jupyter Notebook Optimizations
-**Learning:** Python operations on arrays in jupyter notebooks can be sped up significantly by avoiding explicit `for` loops with `append()` calls. Standard operations like `list(range(len(x)))` instead of manual iteration perform much faster at scale.
-**Action:** When I encounter `for` loops constructing integer indices or other sequences manually, I should consider built-in functions like `list(range(...))` or dictionary/list comprehensions for significant speed boosts.
+## 2024-05-24 - Avoid dictionary key mutation during iteration
+**Learning:** Mutating dictionary keys during iteration (e.g., `for k in d.keys(): d[new_k] = d.pop(k)`) is not only slow but raises a `RuntimeError` in Python 3. Vectorized Pandas operations are faster and safer.
+**Action:** Replace dictionary iteration loops with native Pandas operations (e.g., `data.index.strftime('%Y-%m-%d')`) before converting DataFrames to dictionaries.
