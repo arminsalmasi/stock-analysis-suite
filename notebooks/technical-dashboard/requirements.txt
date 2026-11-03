@@ -383,7 +383,7 @@ torchaudio==0.13.1+cu116
 torchsummary==1.5.1
 torchtext==0.14.1
 torchvision==0.14.1+cu116
-tornado==6.0.4
+tornado==6.6
 tqdm==4.64.1
 traitlets==5.7.1
 tweepy==3.10.0
