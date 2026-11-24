@@ -148,7 +148,7 @@ httplib2==0.17.4
 httpstan==4.6.1
 humanize==0.5.1
 hyperopt==0.1.2
-idna==2.10
+idna==3.15
 imageio==2.9.0
 imagesize==1.4.1
 imbalanced-learn==0.8.1
