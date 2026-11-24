@@ -192,7 +192,7 @@ lmdb==0.99
 locket==1.0.0
 logical-unification==0.4.5
 LunarCalendar==0.0.9
-lxml==4.9.2
+lxml==6.1.0
 Markdown==3.4.1
 MarkupSafe==2.0.1
 marshmallow==3.19.0
