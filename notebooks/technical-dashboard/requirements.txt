@@ -64,7 +64,7 @@ decorator==4.4.2
 defusedxml==0.7.1
 descartes==1.1.0
 dill==0.3.6
-distributed==2022.2.1
+distributed==2026.1.0
 dlib==19.24.0
 dm-tree==0.1.8
 dnspython==2.3.0
