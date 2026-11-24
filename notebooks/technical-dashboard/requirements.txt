@@ -252,7 +252,7 @@ pep517==0.13.0
 pexpect==4.8.0
 pickleshare==0.7.5
 Pillow==7.1.2
-pip==22.0.4
+pip==26.2
 pip-tools==6.6.2
 platformdirs==3.0.0
 plotly==5.5.0
