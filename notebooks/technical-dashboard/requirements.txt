@@ -392,7 +392,7 @@ typer==0.7.0
 typing_extensions==4.4.0
 tzlocal==1.5.1
 uritemplate==4.1.1
-urllib3==1.24.3
+urllib3==2.8.0
 vega-datasets==0.9.0
 wasabi==0.10.1
 wcwidth==0.2.6
