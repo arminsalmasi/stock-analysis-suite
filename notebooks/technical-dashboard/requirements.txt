@@ -144,7 +144,7 @@ holidays==0.19
 holoviews==1.14.9
 html5lib==1.1
 httpimport==0.5.18
-httplib2==0.17.4
+httplib2==0.32.0
 httpstan==4.6.1
 humanize==0.5.1
 hyperopt==0.1.2
